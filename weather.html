@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>My Weather</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <div>
+                <h1>My Weather</h1>
+            </div>
+            <div>
+                <input type="text" class="form-control" placeholder="city name" value="Baku, Azerbaijan">
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Today</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">5-day forecast</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+
+        <div class="five-day">
+            <div class="day">
+                <h3>Tonight</h3>
+                <p>Jun 30</p>
+                <img src="img/moon_icon.png">
+                <h2>25°C</h2>
+                <p>Clear, Warm</p>
+            </div>
+            <div class="day day-active">
+                <h3>Sun</h3>
+                <p>Jul 01</p>
+                <img src="img/sunny_icon.png">
+                <h2>40°C</h2>
+                <p>Clear, Warm</p>
+            </div>
+            <div class="day">
+                <h3>Mon</h3>
+                <p>Jul 02</p>
+                <img src="img/sunny_icon.png">
+                <h2>35°C</h2>
+                <p>Clear, Warm</p>
+            </div>
+            <div class="day">
+                <h3>Tue</h3>
+                <p>Jul 03</p>
+                <img src="img/sunny_icon.png">
+                <h2>38°C</h2>
+                <p>Clear, Warm</p>
+            </div>
+            <div class="day">
+                <h3>Wed</h3>
+                <p>Jul 03</p>
+                <img src="img/sunny_icon.png">
+                <h2>36°C</h2>
+                <p>Clear, Warm</p>
+            </div>
+        </div>
+
+        <div class="hourly">
+            <h3>hourly</h3>
+            <table class="table-hover">
+                <thead id="table_head_hourly_weather">
+                  <tr>
+                    <th scope="col">Today</th>
+                    <th scope="col">7pm</th>
+                    <th scope="col">8pm</th>
+                    <th scope="col">9pm</th>
+                    <th scope="col">10pm</th>
+                    <th scope="col">11pm</th>
+                    <th scope="col">12am</th>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td><img src="img/Clear.png"></td>
+                    <td><img src="img/Clear.png"></td>
+                    <td><img src="img/Clear.png"></td>
+                    <td><img src="img/Clear.png"></td>
+                    <td><img src="img/Clear.png"></td>
+                    <td><img src="img/Clear.png"></td>
+                  </tr>
+                </thead>
+                <tbody id="table_body_hourly_weather">
+                  <tr>
+                    <th scope="row">Forecast</th>
+                    <td>Sunny</td>
+                    <td>Sunny</td>
+                    <td>Sunny</td>
+                    <td>Clear</td>
+                    <td>Clear</td>
+                    <td>Clear</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Temp (°C)</th>
+                    <td>29°</td>
+                    <td>28°</td>
+                    <td>25°</td>
+                    <td>23°</td>
+                    <td>20°</td>
+                    <td>19°</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">RealFeel</th>
+                    <td>28°</td>
+                    <td>27°</td>
+                    <td>25°</td>
+                    <td>20°</td>
+                    <td>19°</td>
+                    <td>18°</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Wind (m/s)</th>
+                    <td>28°</td>
+                    <td>27°</td>
+                    <td>25°</td>
+                    <td>20°</td>
+                    <td>19°</td>
+                    <td>18°</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+    </main>
+    
+</body>
+</html>
